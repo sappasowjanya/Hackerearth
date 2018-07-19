@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(){
+	int num,i,j=0;
+	scanf("%d", &num);              			// Reading input from STDIN
+//	printf("Input number is %d.\n", num);
+	char str[31],str1[31];
+    for(i=0;i<num;i++)
+    {
+        scanf("%s",str);
+          int k=0;
+        while(str[k]!='\0')
+        {
+            if(str[k]!=str[k+1])
+            {
+               printf("%c",str[k]);
+               k++;
+            }
+            else
+            {
+                k++;
+            }
+        }
+        printf("\n");
+    }
+}
